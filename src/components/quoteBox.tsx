@@ -10,13 +10,13 @@ export const QuoteBoxComponent: Component<TQuoteBoxProps> = (props) => {
       setQuote(quote() + text()![index()]);
       setIndex(index() + 1);
     }
-  }, 25);
+  }, 30);
   onCleanup(() => {
     clearInterval(interval);
   });
 
   return (
-    <div class="max-w-md p-6 bg-night border-davy_gray rounded-lg text-center">
+    <div class="max-w-md p-6 border-davy_gray rounded-lg text-center">
       <span class="font-serif text-xl text-transparent animate-text bg-gradient-to-r from-platinum via-battleship to-onyx bg-clip-text">
         {quote()}
       </span>
