@@ -10,7 +10,7 @@ const App: Component = () => {
       <header>
         <NavBarComponent></NavBarComponent>
       </header>
-      <div class="w-full flex bg-gradient-to-r from-night to-eerie_black">
+      <div class="w-full flex bg-gradient-to-r from-night to-eerie_black animate-slip-animate">
         <main
           role="main"
           class="w-full flex flex-col h-screen content-center justify-center"

@@ -16,6 +16,7 @@ module.exports = {
       animation: {
         'slide-down': 'transform: translateY(3rem) 2s ease-out',
         text: 'text 5s ease infinite',
+        'slip-animate': 'slip 30s ease infinite'
       },
       keyframes: {
         text: {
@@ -28,6 +29,16 @@ module.exports = {
             'background-position': 'right center',
           },
         },
+        slip: {
+          '0%, 100%': {
+            'background-size': '400%',
+            'background-position': '0% 50%'
+          },
+          '50%': {
+            'background-size': '400%',
+            'background-position': '100% 50%'
+          }
+        }
       }
   },
   },
